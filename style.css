@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+body{
+    background-image: url("img/backgroundGames.jpg");
+}
+
+.navigation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+:root{
+    --fundo:#1C1C1C;
+    --corP:white;
+    --corS:#B22222
+    
+}
+
+.navigation .logo{
+    color: var(--corP);
+    font-weight: 800;
+    font-size: 2em;
+}
+
+.logo span{
+    color: var(--corS);
+}
+
+.navigation ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25%;
+    
+}
+
+
+
+.navigation i{
+    color: var(--corP);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: var(--corP);
+    font-size: 1.2em;
+    
+}
+
+.login-button button{
+    border: none;
+    background-color: var(--corS);
+    padding: 12px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+@media screen and (max-width:730px){
+    .navigation{
+        padding: 20px 40px;
+    }
+
+    .navigation ul{
+        display: none;
+    }
+
+    .login-button{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background: transparent;
+        border: none;
+    }
+
+    .icon{
+        width: 3vh;
+    }
+
+    .navigation .logo{
+        font-size: 1.5em;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem ;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button{
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button{
+        width: 100%;
+    }
+
+    .open{
+        display: block;
+    }
+    body{
+        background-size:auto;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
