@@ -7,8 +7,19 @@
     
 }
 
-body{
-    background-image: url("img/backgroundGames.jpg");
+
+
+main{
+    height: 100%;
+    height: 100vh;
+    background-image: url('img/backgroundGames.jpg');
+    
+    
+}
+
+.navigation.scrollando{
+    background-color: #1C1C1C;
+    transition: all 0.5s;
 }
 
 .navigation{
@@ -17,6 +28,8 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 30px 40px;
+    position: fixed;
+    top: 0;
 }
 
 :root{
@@ -55,11 +68,34 @@ body{
 
 
 
-a{
+li a{
+    position: relative;
     text-decoration: none;
     color: var(--corP);
     font-size: 1.2em;
     
+}
+
+a{
+    text-decoration: none;
+    color: var(--corP);
+    font-size: 1.2em;
+
+}
+
+li a::after{
+    content: " ";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+
+a:hover::after{
+    width: 100%;
 }
 
 .login-button button{
@@ -71,6 +107,11 @@ a{
 
 }
 
+.login-button button:hover{
+    background-color: #a13244;
+    cursor: pointer;
+}
+
 .mobile-menu-icon{
     display: none;
 }
@@ -79,10 +120,25 @@ a{
     display: none;
 }
 
+.background-cards{
+    background: #1C1C1C;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    
+}
+
+.background-cards img{
+    width: 15vw;
+}
+
+
 
 @media screen and (max-width:730px){
     .navigation{
         padding: 20px 40px;
+        position: sticky;
+        background-color: #1C1C1C;
     }
 
     .navigation ul{
@@ -110,6 +166,11 @@ a{
         font-size: 1.5em;
     }
 
+    .mobile-menu{
+        display: block;
+        background-color: #1C1C1C;
+    }
+
     .mobile-menu ul{
         display: flex;
         flex-direction: column;
@@ -131,13 +192,13 @@ a{
         width: 100%;
     }
 
-    .open{
-        display: block;
+    
+    main{
+        background-image: url('img/backgroundMobile.png');
+        background-size: cover;
     }
-    body{
-        background-size:auto;
-        background-repeat: no-repeat;
-    }
+    
+    
 }
 
 
