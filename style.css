@@ -125,9 +125,9 @@ a:hover::after{
     width: 100%;
     height: 80vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 0 5rem;
+    
     
 }
 
@@ -136,14 +136,36 @@ a:hover::after{
     border-radius: 4px;
 }
 
+.content-card{
+    color: white;
+}
+
 .box-img{
+    background-color: #191F22;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 60%;
-    width: 50% ;
+    justify-content: space-evenly;
+    height: 75%;
+    width: 25%;
+    border-radius: 10px;
 
+}
+
+.gta , .lol, .csgo{
+    transition: 1s;
+}
+
+.gta:hover{
+    box-shadow: #FFA500 0px 20px 30px -10px;
+}
+
+.csgo:hover{
+    box-shadow: #005B96 0px 20px 30px -10px;
+}
+
+.lol:hover{
+    box-shadow: #6497B1 0px 20px 30px -10px;
 }
 
 .box-img button{
@@ -172,6 +194,22 @@ a:hover::after{
     
 } */
 
+
+@media (max-width:980px){
+    
+
+    .background-cards{
+        height: 200vh;
+        flex-direction: column;
+        gap: 1.5rem 0;
+    }
+
+    .box-img{
+        height: 25%;
+        justify-content: center;
+        gap: 1.2rem 0;
+    }
+}
 
 @media screen and (max-width:730px){
     .navigation{
@@ -236,9 +274,14 @@ a:hover::after{
         background-image: url('img/backgroundMobile.png');
         background-size: cover;
     }
-    
+
+    .background-cards{
+        
+    }
     
 }
+
+
 
 
 

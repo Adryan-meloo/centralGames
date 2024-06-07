@@ -21,7 +21,7 @@ let lol = document.querySelector('#goLol');
 
 
 gta.addEventListener('click',function(){
-    
+
     window.location.href = 'https://www.rockstargames.com/br/games/sanandreas';
 });
 
