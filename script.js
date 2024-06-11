@@ -5,12 +5,18 @@ addEventListener('scroll',function(){
 
 let iconMobile = document.querySelector('.mobile-menu-icon');
 let menuMobile = document.querySelector('.mobile-menu');
+let imgMobile = document.querySelector('.icon');
+
+
 
 iconMobile.addEventListener('click',function(){
     if(menuMobile.style.display == 'none'){
         menuMobile.style.display = 'block';
+        imgMobile.src = 'img/x.png'
+        console.log('oi')
     }else{
         menuMobile.style.display = 'none';
+        imgMobile.src = 'img/menu-mobile.png'
     }
 });
 
