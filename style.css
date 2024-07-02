@@ -165,6 +165,28 @@ a:hover::after {
 }
 
 
+.cards button {
+    padding: 15px 30px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    border: none;
+
+}
+
+#goGta {
+    background-image: linear-gradient(45deg,#FFA500 20%,#ccc);
+}
+
+#goCs {
+    background-image: linear-gradient(45deg,#005b96 20%,#ccc);
+    
+}
+
+#goLol {
+    background-image: linear-gradient(45deg,#6497b1 20%,#ccc);
+
+}
 
 .gta,
 .lol,
@@ -184,6 +206,21 @@ a:hover::after {
     box-shadow: #6497B1 0px 20px 30px -10px;
 }
 
+
+@media (max-width:1000px){
+    
+    .cards{
+        flex-direction: column;
+        height: 200vh;
+        justify-content: space-evenly;
+        
+    }
+
+    .card-item{
+        width: 50%;
+        height: 25%;
+    }
+}
 
 
 
