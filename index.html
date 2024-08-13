@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cards.css">
     <script defer src="script.js"></script>
 </head>
 
 <body>
 
+    <!-- Início Cabeçalho da Página -->
     <header>
         <nav class="navigation">
             <a href="#" class="logo"><span>Central</span> Games</a>
@@ -27,6 +31,8 @@
             </div>
         </nav>
 
+        <!-- Início do Mobile Menu, essa classe somente será ativada mediante a diminuição das dimensões da VIEW -->
+
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="">Jogos</a></li>
@@ -37,12 +43,24 @@
                 <button><a href="#">Entrar</a></button>
             </div>
         </div>
+
+        <!-- Fim Mobile Menu -->
+
     </header>
 
+    <!-- Fim Cabeçalho da Página -->
+
+    <!-- Início Texto principal do Home -->
 
     <main></main>
 
+    <!-- Fim Texto Principal do Home -->
+
+    <!-- Início dos Cards -->
+
     <div class="cards">
+
+        <!-- Início Card numero 1 -->
 
         <div class="card-item gta">
             <img src="img/gtaSan.jpeg" alt="">
@@ -51,12 +69,20 @@
             <button id="goGta">SAIBA MAIS</button>
         </div>
 
+        <!-- Fim Card numero 1 -->
+
+        <!-- Inicio Card numero 2 -->
+
         <div class="card-item csgo">
             <img src="img/csCard.png" alt="">
             <h3>CS GO</h3>
             <div class="content-card">Descrição</div>
             <button id="goCs">SAIBA MAIS</button>
         </div>
+
+        <!-- Fim Card numero 2 -->
+
+        <!-- Inicio Card numero 3 -->
 
         <div class="card-item lol">
             <img src="img/logo-lol.jpeg" alt="">
@@ -65,7 +91,11 @@
             <button id="goLol">SAIBA MAIS</button>
         </div>
 
+        <!-- Fim Card numero 3 -->
+
     </div>
+
+    <!-- Fim dos Cards -->
 
 </body>
 

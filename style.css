@@ -1,19 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-
-}
-
-
 :root {
     --black: #1C1C1C;
     --red: #B22222
 }
 
+/* Imagem principal  */
 main {
     height: 100%;
     height: 100vh;
@@ -22,192 +14,8 @@ main {
 
 }
 
-.navigation.scrollando {
-    background-color: #1C1C1C;
-    transition: all 0.5s;
-}
 
-.navigation {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 40px;
-    position: fixed;
-    top: 0;
-}
-
-
-.navigation .logo {
-    color: white;
-    font-weight: 800;
-    font-size: 2em;
-}
-
-
-
-.navigation ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 25%;
-
-}
-
-
-
-.navigation i {
-    color: white;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
-.logo span {
-    color: var(--red);
-}
-
-
-
-li a {
-    position: relative;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-
-}
-
-li a::after {
-    content: " ";
-    position: absolute;
-    background-color: white;
-    height: 2px;
-    width: 0;
-    left: 0;
-    bottom: -8px;
-    transition: 0.3s;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-
-}
-
-a:hover::after {
-    width: 100%;
-}
-
-
-.login-button button {
-    border: none;
-    background-color: var(--red);
-    padding: 12px 20px;
-    font-weight: 600;
-    border-radius: 5px;
-
-}
-
-.login-button button:hover {
-    background-color: #a13244;
-    cursor: pointer;
-}
-
-.mobile-menu-icon {
-    display: none;
-}
-
-.mobile-menu {
-    display: none;
-}
-
-.cards {
-    background: #1C1C1C;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-
-}
-
-.cards img {
-    width: 15vw;
-    border-radius: 4px;
-}
-
-.cards .card-item h3 {
-    color: white;
-}
-
-.cards .card-item:nth-child(2n) img {
-    background-color: white;
-    border-radius: 4px;
-}
-
-
-.content-card {
-    color: white;
-}
-
-.card-item {
-    background-color: #191F22;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 75%;
-    width: 25%;
-    border-radius: 10px;
-
-}
-
-
-.cards button {
-    padding: 15px 30px;
-    border-radius: 25px;
-    color: white;
-    font-weight: 600;
-    border: none;
-
-}
-
-#goGta {
-    background-image: linear-gradient(45deg,#FFA500 20%,#ccc);
-}
-
-#goCs {
-    background-image: linear-gradient(45deg,#005b96 20%,#ccc);
-    
-}
-
-#goLol {
-    background-image: linear-gradient(45deg,#6497b1 20%,#ccc);
-
-}
-
-.gta,
-.lol,
-.csgo {
-    transition: 1s;
-}
-
-.gta:hover {
-    box-shadow: #FFA500 0px 20px 30px -10px;
-}
-
-.csgo:hover {
-    box-shadow: #005B96 0px 20px 30px -10px;
-}
-
-.lol:hover {
-    box-shadow: #6497B1 0px 20px 30px -10px;
-}
-
-
-@media (max-width:1000px){
+/* @media (max-width:1000px){
     
     .cards{
         flex-direction: column;
@@ -220,9 +28,7 @@ a:hover::after {
         width: 50%;
         height: 25%;
     }
-}
-
-
+} */
 
 
 @media screen and (max-width:730px) {

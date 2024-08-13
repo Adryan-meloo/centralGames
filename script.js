@@ -1,12 +1,18 @@
-addEventListener('scroll',function(){
-    let cabecalho = document.querySelector('.navigation');
-    cabecalho.classList.toggle('scrollando',window.scrollY > 0);
-});
-
 let iconMobile = document.querySelector('.mobile-menu-icon');
 let menuMobile = document.querySelector('.mobile-menu');
 let imgMobile = document.querySelector('.icon');
 
+let gta = document.querySelector('#goGta');
+let cs = document.querySelector('#goCs');
+let lol = document.querySelector('#goLol');
+
+
+
+
+addEventListener('scroll',function(){
+    let cabecalho = document.querySelector('.navigation');
+    cabecalho.classList.toggle('scrollando',window.scrollY > 0);
+});
 
 
 iconMobile.addEventListener('click',function(){
@@ -19,11 +25,6 @@ iconMobile.addEventListener('click',function(){
         imgMobile.src = 'img/menu-mobile.png'
     }
 });
-
-let gta = document.querySelector('#goGta');
-let cs = document.querySelector('#goCs');
-let lol = document.querySelector('#goLol');
-
 
 
 gta.addEventListener('click',function(){
@@ -38,3 +39,6 @@ cs.addEventListener('click',function(){
 lol.addEventListener('click',function(){
     window.location.href = 'https://signup.leagueoflegends.com/pt-br/signup/redownload';
 });
+
+
+

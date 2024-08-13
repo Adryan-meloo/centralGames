@@ -1,0 +1,83 @@
+.cards {
+    background: #1C1C1C;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.cards img {
+    width: 15vw;
+    border-radius: 4px;
+}
+
+.cards .card-item h3 {
+    color: white;
+}
+
+.cards .card-item:nth-child(2n) img {
+    background-color: white;
+    border-radius: 4px;
+}
+
+
+.content-card {
+    color: white;
+}
+
+.card-item {
+    background-color: #191F22;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 75%;
+    width: 25%;
+    border-radius: 10px;
+
+}
+
+
+.cards button {
+    padding: 15px 30px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    border: none;
+
+}
+
+#goGta {
+    background-image: linear-gradient(45deg,#FFA500 20%,#ccc);
+}
+
+#goCs {
+    background-image: linear-gradient(45deg,#005b96 20%,#ccc);
+    
+}
+
+#goLol {
+    background-image: linear-gradient(45deg,#6497b1 20%,#ccc);
+
+}
+
+.gta,
+.lol,
+.csgo {
+    transition: 1s;
+}
+
+.gta:hover {
+    box-shadow: #FFA500 0px 20px 30px -10px;
+}
+
+.csgo:hover {
+    box-shadow: #005B96 0px 20px 30px -10px;
+}
+
+.lol:hover {
+    box-shadow: #6497B1 0px 20px 30px -10px;
+}
