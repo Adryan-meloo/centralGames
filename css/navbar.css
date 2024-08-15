@@ -40,7 +40,7 @@
 }
 
 .logo span {
-    color: var(--red);
+    color: #B22222;
 }
 
 li a {
@@ -75,7 +75,7 @@ a:hover::after {
 
 .login-button button {
     border: none;
-    background-color: var(--red);
+    background-color: #B22222;
     padding: 12px 20px;
     font-weight: 600;
     border-radius: 5px;

@@ -1,34 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
-    --black: #1C1C1C;
-    --red: #B22222
-}
 
 /* Imagem principal  */
 main {
     height: 100%;
     height: 100vh;
-    background-image: url('img/backgroundGames.jpg');
-
-
+    background-image: url('/Projetos/centralGames/img/backgroundGames.jpg');
 }
 
-
-/* @media (max-width:1000px){
-    
-    .cards{
-        flex-direction: column;
-        height: 200vh;
-        justify-content: space-evenly;
-        
-    }
-
-    .card-item{
-        width: 50%;
-        height: 25%;
-    }
-} */
 
 
 @media screen and (max-width:730px) {
@@ -89,9 +68,8 @@ main {
         width: 100%;
     }
 
-
     main {
-        background-image: url('img/backgroundMobile.png');
+        background-image: url('/Projetos/centralGames/img/backgroundMobile.png');
         background-size: cover;
     }
 

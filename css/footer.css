@@ -1,0 +1,10 @@
+footer{
+    width: 100%;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#footer_content{
+    background-color:#1c1c1c;
+    display: grid;
+}
