@@ -1,16 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-/* Imagem principal  */
-main {
-    height: 100%;
-    height: 100vh;
-    background-image: url('/Projetos/centralGames/img/backgroundGames.jpg');
-}
-
-
-
-@media screen and (max-width:730px) {
+@media screen and (max-width:736px) {
     .navigation {
         padding: 20px 40px;
         position: sticky;
@@ -69,9 +60,34 @@ main {
     }
 
     main {
-        background-image: url('/Projetos/centralGames/img/backgroundMobile.png');
+        background-image: linear-gradient(to right,rgba(0,0,0,0.8),transparent),url('../img/backgroundMobile.png');
         background-size: cover;
+        
+    }
+    main div{
+        font-size: 1.8rem;
+    }
+
+    #footer-content{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+
+    .cards{
+        flex-direction: column;
+        height: 180vh;
+    }
+
+    .card-item{
+        width: 40%;
     }
 
 
+}
+
+@media screen and (max-width: 426px){
+    #footer_content{
+        grid-template-columns: repeat(1,1fr);
+        padding: 3rem 2rem;
+    }
 }

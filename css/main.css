@@ -1,0 +1,16 @@
+/* Imagem principal  */
+main{
+    position: relative;
+    z-index: -1;
+    height: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right,rgba(0,0,0,0.8),transparent),url("../img/backgroundGames.jpg");
+}
+
+main div{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: white;
+    font-size: 2.5rem;
+}
