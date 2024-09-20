@@ -54,7 +54,7 @@ li a {
 li a::after {
     content: " ";
     position: absolute;
-    background-color: white;
+    background-color: red;
     height: 2px;
     width: 0;
     left: 0;
