@@ -1,3 +1,4 @@
+// Variáveis
 let iconMobile = document.querySelector('.mobile-menu-icon');
 let menuMobile = document.querySelector('.mobile-menu');
 let imgMobile = document.querySelector('.icon');
@@ -8,13 +9,13 @@ let lol = document.querySelector('#goLol');
 
 
 
-
+// Escutador
 addEventListener('scroll',function(){
     let cabecalho = document.querySelector('.navigation');
     cabecalho.classList.toggle('scrollando',window.scrollY > 0);
 });
 
-
+//Escutador
 iconMobile.addEventListener('click',function(){
     if(menuMobile.style.display == 'none'){
         menuMobile.style.display = 'block';
@@ -26,7 +27,7 @@ iconMobile.addEventListener('click',function(){
     }
 });
 
-
+//Escutador
 gta.addEventListener('click',function(){
 
     window.location.href = 'https://www.rockstargames.com/br/games/sanandreas';
