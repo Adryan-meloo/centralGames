@@ -5,20 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/media.css">
-    
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script defer src="js\script.js"></script>
 </head>
 
 <body>
 
-    <!-- Início Cabeçalho da Página -->
+    <!-- Configuração do Cabeçalho -->
     <header>
         <nav class="navigation">
             <a href="#" class="logo"><span>Central</span> Games</a>
@@ -35,8 +32,6 @@
             </div>
         </nav>
 
-        <!-- Início do Mobile Menu, essa classe somente será ativada mediante a diminuição das dimensões da VIEW -->
-
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="">Jogos</a></li>
@@ -47,134 +42,33 @@
                 <button><a href="#">Entrar</a></button>
             </div>
         </div>
-
-        <!-- Fim Mobile Menu -->
-
     </header>
 
-    <!-- Fim Cabeçalho da Página -->
 
-
-
-    <!-- Início Texto principal do Home -->
-
+    <!-- Configuração do Corpo da página -->
     <main>
-        <h1>Bem Vindo a Central Games</h1>
+        <h1>Bem-vindo a Central Games</h1>
+        <section class="parallax"></section>
+        <section class="noticias">Aqui vai ficará as notícias</section>
+        <section class="parallax"></section>
+
     </main>
 
-    <!-- Fim Texto Principal do Home -->
+    
 
-    <!-- Início dos Cards -->
 
-    <div class="cards">
-
-        <!-- Início Card numero 1 -->
-
-        <div class="card-item gta">
-            <img src="img/gtaSan.jpeg" alt="">
-            <h3>GTA</h3>
-            <button id="goGta">SAIBA MAIS</button>
-        </div>
-
-        <!-- Fim Card numero 1 -->
-
-        <!-- Inicio Card numero 2 -->
-
-        <div class="card-item csgo">
-            <img src="img/csCard.png" alt="">
-            <h3>CS GO</h3> 
-            <button id="goCs">SAIBA MAIS</button>
-        </div>
-
-        <!-- Fim Card numero 2 -->
-
-        <!-- Inicio Card numero 3 -->
-
-        <div class="card-item lol">
-            <img src="img/logo-lol.jpeg" alt="">
-            <h3>LEAGUE OF LEGENDS</h3>
-            <button id="goLol">SAIBA MAIS</button>
-        </div>
-
-        <!-- Fim Card numero 3 -->
-
-    </div>
-
-    <!-- Fim dos Cards -->
-
-    <hr>
-
+    <!-- Configuração do Footer -->
     <footer>
-        <div id="footer_content">
-            <div id="footer_contacts">
-                <h1>Central Games</h1>
-                <div id="footer_social_media">
-                    <a href="#" class="footer-link" id="instagram">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="#" class="footer-link" id="facebook">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    
-                    <a href="#" class="footer-link" id="whatsapp">
-                        <i class="bi bi-whatsapp"></i>
-                    </a>
-                    
-                    
-                </div>
-            </div>
-
-            <ul class="footer-list">
-                <li>
-                    <h1>Blog</h1>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Tech</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Adventures</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Music </a>
-                </li>
-            </ul>
-            <ul class="footer-list">
-                <li>
-                    <h1>Products</h1>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">App</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Desktop</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Cloud</a>
-                </li>
-            </ul>
-
-            <div id="footer_subscribe">
-                <h3>Subscribe</h3>
-                <p>
-                    Dê seu feedback!
-                </p>
-
-                <div id="input_group">
-                    <input type="email" id="email">
-                    <button>
-                        <i class="bi bi-envelope"></i>
-                    </button>
-                </div>
-
-            </div>
-
+        <div>
+            <a href="#">Sobre nós</a>
+            <a href="#">Suporte</a>
+            <a href="#">Contato</a>
         </div>
-
-        <div id="footer_copyright">
-            &#169
-            2024 Adryan - Todos os direitos reservados
+        <div>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-github"></i>
         </div>
-
     </footer>
 
 </body>

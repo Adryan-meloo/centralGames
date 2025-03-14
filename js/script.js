@@ -9,25 +9,22 @@ let lol = document.querySelector('#goLol');
 
 
 
-// Escutador
+// Escutadorres
 addEventListener('scroll',function(){
     let cabecalho = document.querySelector('.navigation');
     cabecalho.classList.toggle('scrollando',window.scrollY > 0);
 });
 
-//Escutador
 iconMobile.addEventListener('click',function(){
     if(menuMobile.style.display == 'none'){
         menuMobile.style.display = 'block';
         imgMobile.src = 'img/x.png'
-        console.log('oi')
     }else{
         menuMobile.style.display = 'none';
         imgMobile.src = 'img/menu-mobile.png'
     }
 });
 
-//Escutador
 gta.addEventListener('click',function(){
 
     window.location.href = 'https://www.rockstargames.com/br/games/sanandreas';
