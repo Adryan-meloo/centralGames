@@ -165,6 +165,40 @@ section{
 }
 
 
+.card-list{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.card-list .bi{
+    position: absolute;
+    font-size: 2rem;
+    top: 40%;
+}
+
+.card-list .bi-arrow-left-square-fill{
+    left: 0 ;
+}
+
+.card-list .bi-arrow-right-square-fill{
+    right: 0;
+    
+}
+
+.card-list .bi:hover{
+    cursor: pointer;
+    color: rgba(225, 225, 225, 0.5)
+}
+
+.card-item{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
 
 .list .card-item .card-link{
     display: block;
@@ -175,11 +209,6 @@ section{
 
 }
 
-.list .card-item{
-    display: flex;
-    width: 100%;
-    height: 80vh;
-}
 
 .card-link img{
     width: 100%;
@@ -238,11 +267,17 @@ footer div{
     
 }
 
+footer i{
+    cursor: pointer;
+}
+
 footer div:first-child{
     height: 8vh;
 }
 
 footer div a{
+    text-decoration: none;
+    color: white;
     width: 8vw;
     text-align: center;
 }
